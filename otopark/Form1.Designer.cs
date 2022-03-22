@@ -31,8 +31,8 @@ namespace otopark
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
-            this.kul = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_kulladı = new System.Windows.Forms.TextBox();
+            this.txt_sifre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -48,25 +48,25 @@ namespace otopark
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // kul
+            // txt_kulladı
             // 
-            this.kul.BackColor = System.Drawing.Color.Gray;
-            this.kul.ForeColor = System.Drawing.Color.Silver;
-            this.kul.Location = new System.Drawing.Point(48, 222);
-            this.kul.Name = "kul";
-            this.kul.Size = new System.Drawing.Size(272, 20);
-            this.kul.TabIndex = 1;
-            this.kul.Text = "Kullanıcıadı";
+            this.txt_kulladı.BackColor = System.Drawing.Color.Gray;
+            this.txt_kulladı.ForeColor = System.Drawing.Color.Silver;
+            this.txt_kulladı.Location = new System.Drawing.Point(48, 222);
+            this.txt_kulladı.Name = "txt_kulladı";
+            this.txt_kulladı.Size = new System.Drawing.Size(272, 20);
+            this.txt_kulladı.TabIndex = 1;
+            this.txt_kulladı.Text = "Kullanıcıadı";
             // 
-            // textBox2
+            // txt_sifre
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Gray;
-            this.textBox2.ForeColor = System.Drawing.Color.Silver;
-            this.textBox2.Location = new System.Drawing.Point(55, 344);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(265, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Şifre";
+            this.txt_sifre.BackColor = System.Drawing.Color.Gray;
+            this.txt_sifre.ForeColor = System.Drawing.Color.Silver;
+            this.txt_sifre.Location = new System.Drawing.Point(55, 344);
+            this.txt_sifre.Name = "txt_sifre";
+            this.txt_sifre.Size = new System.Drawing.Size(265, 20);
+            this.txt_sifre.TabIndex = 2;
+            this.txt_sifre.Text = "Şifre";
             // 
             // button2
             // 
@@ -90,8 +90,8 @@ namespace otopark
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(386, 492);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.kul);
+            this.Controls.Add(this.txt_sifre);
+            this.Controls.Add(this.txt_kulladı);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -105,8 +105,8 @@ namespace otopark
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox kul;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_kulladı;
+        private System.Windows.Forms.TextBox txt_sifre;
         private System.Windows.Forms.Button button2;
     }
 }

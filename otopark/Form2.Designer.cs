@@ -32,11 +32,10 @@ namespace otopark
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.AracGuncelle_btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Plaka_lbl = new System.Windows.Forms.Label();
+            this.txt_plaka = new System.Windows.Forms.TextBox();
+            this.lbl_Plaka = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,6 +43,10 @@ namespace otopark
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -66,22 +69,11 @@ namespace otopark
             this.label2.TabIndex = 1;
             this.label2.Text = "1001";
             // 
-            // AracGuncelle_btn
-            // 
-            this.AracGuncelle_btn.BackColor = System.Drawing.Color.Transparent;
-            this.AracGuncelle_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AracGuncelle_btn.BackgroundImage")));
-            this.AracGuncelle_btn.Location = new System.Drawing.Point(12, 111);
-            this.AracGuncelle_btn.Name = "AracGuncelle_btn";
-            this.AracGuncelle_btn.Size = new System.Drawing.Size(272, 57);
-            this.AracGuncelle_btn.TabIndex = 2;
-            this.AracGuncelle_btn.UseVisualStyleBackColor = false;
-            this.AracGuncelle_btn.Click += new System.EventHandler(this.AracGuncelle_btn_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Location = new System.Drawing.Point(23, 237);
+            this.button1.Location = new System.Drawing.Point(23, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(261, 57);
             this.button1.TabIndex = 3;
@@ -97,26 +89,26 @@ namespace otopark
             this.button2.Size = new System.Drawing.Size(111, 39);
             this.button2.TabIndex = 4;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox1
+            // txt_plaka
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(362, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 20);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = " PLAKA";
+            this.txt_plaka.BackColor = System.Drawing.Color.Silver;
+            this.txt_plaka.Location = new System.Drawing.Point(362, 130);
+            this.txt_plaka.Name = "txt_plaka";
+            this.txt_plaka.Size = new System.Drawing.Size(237, 20);
+            this.txt_plaka.TabIndex = 5;
             // 
-            // Plaka_lbl
+            // lbl_Plaka
             // 
-            this.Plaka_lbl.AutoSize = true;
-            this.Plaka_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.Plaka_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.Plaka_lbl.Location = new System.Drawing.Point(945, 213);
-            this.Plaka_lbl.Name = "Plaka_lbl";
-            this.Plaka_lbl.Size = new System.Drawing.Size(86, 18);
-            this.Plaka_lbl.TabIndex = 6;
-            this.Plaka_lbl.Text = " 34 AA 3434";
+            this.lbl_Plaka.AutoSize = true;
+            this.lbl_Plaka.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Plaka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.lbl_Plaka.Location = new System.Drawing.Point(945, 213);
+            this.lbl_Plaka.Name = "lbl_Plaka";
+            this.lbl_Plaka.Size = new System.Drawing.Size(86, 18);
+            this.lbl_Plaka.TabIndex = 6;
+            this.lbl_Plaka.Text = " 34 AA 3434";
             // 
             // label3
             // 
@@ -189,10 +181,41 @@ namespace otopark
             this.dateTimePicker2.CalendarTitleBackColor = System.Drawing.Color.Transparent;
             this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.Transparent;
             this.dateTimePicker2.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
-            this.dateTimePicker2.Location = new System.Drawing.Point(850, 24);
+            this.dateTimePicker2.Location = new System.Drawing.Point(850, 9);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(169, 20);
             this.dateTimePicker2.TabIndex = 13;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker3.CalendarForeColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.dateTimePicker3.CalendarTitleBackColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker3.CalendarTitleForeColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker3.CalendarTrailingForeColor = System.Drawing.Color.Transparent;
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker3.Location = new System.Drawing.Point(850, 38);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker3.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(986, 253);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 15;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::otopark.Properties.Resources.Adsız;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 107);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(281, 69);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form2
             // 
@@ -201,6 +224,9 @@ namespace otopark
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1199, 549);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label7);
@@ -208,16 +234,17 @@ namespace otopark
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Plaka_lbl);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl_Plaka);
+            this.Controls.Add(this.txt_plaka);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.AracGuncelle_btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,11 +254,10 @@ namespace otopark
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button AracGuncelle_btn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Plaka_lbl;
+        private System.Windows.Forms.TextBox txt_plaka;
+        private System.Windows.Forms.Label lbl_Plaka;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -239,5 +265,8 @@ namespace otopark
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

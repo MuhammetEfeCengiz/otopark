@@ -29,5 +29,24 @@ namespace otopark
             form4.ShowDialog();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           string plaka;
+            plaka = lbl_Plaka.Text;
+            label6.Text = dateTimePicker1.Value.ToString();
+            label4.Text = dateTimePicker2.Value.ToString();
+            lbl_Plaka.Text = txt_plaka.Text;
+            if (txt_plaka.Text== plaka)
+            {
+                label5.Text = "";
+            }
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
